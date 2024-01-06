@@ -4,49 +4,119 @@
   font-family: "Open Sans", sans-serif;
 }
 
-
 /* common styles */
-.btn-ylw{
-    background-color: #FD6E0A;
-    border-radius: 5px;
-    border: 0;
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
+.btn-ylw {
+  background-color: #fd6e0a;
+  border-radius: 5px;
+  border: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.btn-wht {
+  border-radius: 5px;
+  border: 1px solid #fd6e0a;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fd6e0a;
+  background: white;
 }
 
 /* nav styles */
-header{
-    background-color: #FFF8F3;
+header {
+  background-image: url(images/header_bg.png);
+  background-color: #fff8f3;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 250px;
-}
-
-.siteTitle{
-    font-size: 45px;
-}
-
-.siteTitle>span{
-    color: #FD6E0A;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 250px;
 }
 
-nav > ul{
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    color: #474747;
+.siteTitle {
+  font-size: 45px;
 }
 
-nav > ul > li{
-    list-style-type: none;
-    margin: 0 40px;
+.siteTitle > span {
+  color: #fd6e0a;
 }
 
-.navBtn{
-    padding: 18px 35px;
-    margin-left: 40px;
+nav > ul {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #474747;
+}
+
+nav > ul > li {
+  list-style-type: none;
+  margin: 0 40px;
+}
+
+.navBtn {
+  padding: 18px 35px;
+  margin-left: 40px;
+}
+
+/* information section */
+
+.information {
+  display: flex;
+  padding: 0 20px 0 250px;
+  justify-content: space-between;
+}
+
+.information > .details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details > .greet {
+  font-size: 45px;
+  font-weight: 600;
+  padding: 5px 0;
+  color: #474747;
+}
+
+.details > .title {
+  font-size: 85px;
+  font-weight: 700;
+  color: #181818;
+  padding: 20px 0;
+}
+
+.details > .description {
+  width: 585px;
+  color: #757575;
+  padding: 10px 0 20px 0;
+  font-size: 18px;
+}
+
+.information > .image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.image > img {
+  width: 584px;
+}
+
+/* buttons style */
+
+
+.cvBtn{
+    padding: 19px 17px;
+    margin-right: 20px;
+}
+
+.contactBtn{
+    padding: 19px 17px;
 }
