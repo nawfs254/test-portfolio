@@ -25,10 +25,12 @@
 
 /* nav styles */
 header {
+  width: 100vw;
   background-image: url(images/header_bg.png);
   background-color: #fff8f3;
   background-repeat: no-repeat;
   background-position: bottom right;
+  position: absolute;
 }
 nav {
   display: flex;
@@ -109,14 +111,266 @@ nav > ul > li {
   width: 584px;
 }
 
-/* buttons style */
-
-
-.cvBtn{
-    padding: 19px 17px;
-    margin-right: 20px;
+.sideText {
+  font-size: 84px;
+  position: absolute;
+  writing-mode: vertical-lr;
+  top: 40px;
+  transform: rotate(180deg);
+  color: rgba(24, 24, 24, 0.15);
+  font-weight: 700;
+  letter-spacing: 33px;
 }
 
-.contactBtn{
-    padding: 19px 17px;
+/* buttons style */
+
+.cvBtn {
+  padding: 19px 17px;
+  margin-right: 20px;
+}
+
+.contactBtn {
+  padding: 19px 17px;
+}
+
+/* about sectin styles */
+
+.about {
+  background-color: #fff8f3;
+  width: 1140px;
+  margin: auto;
+  position: relative;
+  top: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 131px;
+  border-radius: 5px;
+}
+
+.aboputText {
+  color: #181818;
+  font-size: 35px;
+}
+
+.aboutDesc {
+  text-align: center;
+  padding: 30px 0;
+  color: #757575;
+  font-size: 18px;
+}
+
+.aboutInfo {
+  display: flex;
+  width: 1140px;
+  justify-content: space-around;
+}
+
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: #757575;
+  font-size: 18px;
+}
+
+.info {
+  color: #454545;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* what i do */
+
+.skills {
+  width: 1140px;
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: 1050px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillTitle {
+  font-size: 35px;
+  padding: 30px 0;
+}
+
+.skillDescription {
+  font-size: 35px;
+  columns: #757575;
+  font-size: 18px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.skillset {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1140px;
+}
+
+.skillbox {
+  width: 267px;
+  height: 377px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.skillImg {
+  padding: 10px 33px;
+}
+
+.skillHead {
+  font-size: 20px;
+  font-weight: 700;
+  color: #181818;
+  padding: 10px 33px;
+}
+
+.skillDesc {
+  text-align: left;
+  width: 201px;
+  padding: 20px 33px;
+  font-size: 16px;
+  color: #757575;
+}
+
+/* Summery Style */
+
+.summery {
+  width: 1140px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  align-items: center;
+}
+
+.summeryBox {
+  display: flex;
+  padding: 100px 0;
+}
+
+.education {
+  width: 570px;
+}
+
+.educationTitle,
+.experienceTitle {
+  color: #474747;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+.educationDetails,
+.experienceDetails {
+  padding: 20px 0;
+}
+
+.experience {
+  width: 570px;
+}
+
+.degree,
+.position {
+  color: #474747;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+.institution {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 600;
+
+  padding: 5px 0;
+}
+
+.result,
+.timeline {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 5px 0;
+}
+
+.edLine,
+.exLine {
+  width: 550px;
+  border: 1px solid #d1d1d1;
+}
+
+/* footer style */
+footer {
+  background-color: #fff8f3;
+  width: 100vw;
+  padding: 30px 0;
+}
+
+.footer {
+    background-color: #fff8f3;
+  display: flex;
+  width: 1140px;
+  margin: auto;
+}
+
+.connectText {
+  width: 570px;
+}
+
+.form {
+  width: 570px;
+}
+
+.connectTitle,
+.formTitle {
+  color: #181818;
+  font-size: 35px;
+  font-weight: 700;
+}
+.connectDesc {
+  color: #474747;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 30px 0;
+}
+
+.connectIcon {
+  padding: 0 20px 0 0;
+}
+
+form > input {
+  width: 461px;
+  box-sizing: border-box;
+  height: 64px;
+  border-radius: 5px;
+  margin-top: 24px;
+  border: none;
+  padding: 10px;
+}
+
+form > textarea {
+  width: 461px;
+  box-sizing: border-box;
+  margin-top: 24px;
+  height: 180px;
+  border: none;
+  padding: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
 }
